@@ -15,8 +15,8 @@ static QTextStream cout(stdout);
 static QTextStream cin(stdin);
 static QTextStream cerr(stderr);
 
-static QFile DimServicesFile("logServices.txt");
-static QFile DimCommandsFile("logCommands.txt");
+static QFile DimServicesFile("ServicesList_v1_0.txt");
+static QFile DimCommandsFile("CommandsList_v1_0.txt");
 static QTextStream outDSs(&DimServicesFile);
 static QTextStream outDCs(&DimCommandsFile);
 
