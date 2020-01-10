@@ -13,7 +13,7 @@ public:
     Emulator(QObject *parent = nullptr);
     ~Emulator();
     MyDimServer* serv;
-    QString node = "hplu-Notebook-PC";
+    QString node = "localhost";
 
     void SetupConnection();
     void FillActRandom();

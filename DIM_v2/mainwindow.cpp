@@ -37,6 +37,7 @@ void MainWindow::on_Btn_Start_clicked()
     if((ui->Btn_AppNode->isChecked()) && (ui->Btn2_AppName->isChecked())) {
         emu->serv->OpenOutFile();
         emu->serv->Npms = static_cast<quint8>(ui->SpinBox_Npms->value());
+        emu->node = ui->lE1_node->text();
 //        emu->serv->setNChannels(static_cast<quint8>(ui->SpinBox_Nchs->value()));
         emu->serv->startServer();
         ui->Btn_AppNode->setEnabled(0);
